@@ -14,5 +14,6 @@ function clickss(e) {
 }
 
 document.addEventListener('DOMContentLoaded', function () {      
-	 clickss();	 
+	 //clickss();	 
+	 clickcolor();
 });
