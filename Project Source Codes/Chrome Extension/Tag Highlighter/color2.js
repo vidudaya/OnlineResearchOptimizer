@@ -6,7 +6,12 @@ function clickss(e) {
   window.close();
 }
 
- 
+// highlight all the p tags on user click event
+ function clickcolor(e) {
+   chrome.tabs.executeScript(null,
+                           {file : "tabcolor.js"});
+  window.close();
+}
 
 document.addEventListener('DOMContentLoaded', function () {      
 	 clickss();	 
