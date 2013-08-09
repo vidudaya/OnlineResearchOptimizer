@@ -4,6 +4,9 @@ var divs = document.getElementsByTagName("p");
 		  //divs[d].addEventListener('click',function(){this.style.background='yellow';});	
 		  
 		  // to check mousedown behaviour , for user mousedown event
-		  divs[d].addEventListener('mousedown',function(){this.style.background='yellow'; alert('testing');});
+		  //divs[d].addEventListener('mousedown',function(){this.style.background='yellow'; alert('testing');});
+		  
+		  // check getSelection()
+		 divs[d].addEventListener('mouseup',function(){var str= document.getSelection() ; alert(str);});  
 	  }
 	 
