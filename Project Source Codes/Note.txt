@@ -1,1 +1,3 @@
 2013-8-7 full  tag highliting part complete
+
+2013-8-9 part of a <p> tag will be highlighted
