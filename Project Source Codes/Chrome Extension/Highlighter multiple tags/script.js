@@ -1,4 +1,4 @@
-function colorSelectedNodes(){
+/*function colorSelectedNodes(){
     var ds= document.getSelection();
     var elements = []
         // only start node if selection occured from start to end 
@@ -24,17 +24,28 @@ function colorSelectedNodes(){
     focusNode.style.backgroundColor = "yellow"; 
     console.log("anchorNode", anchorNode);
     console.log("focusNode", focusNode);
-}
+}*/
 function clickcolor() {
     var divs = document.getElementsByTagName("p");
+	var divs2 = document.getElementsByTagName("a");
 	var divs2 = document.getElementsByTagName("h2");
 	//alert("wewewe");
 	   for(var d in divs) { 
 			 try{
+			 
+			if (divs[d].addEventListener) {
+				 divs[d].addEventListener('mouseup',function(){
+					highlight('yellow');
+				});
+			} else {
+				divs[d].attachEvent('mouseup', function(){
+					highlight('yellow');
+				});
+			}  
 			 //divs[d].addEventListener('mouseup',highlight('yellow'));	
-			 divs[d].addEventListener('mouseup',function(){
+			 /*divs[d].addEventListener('mouseup',function(){
 				highlight('yellow');
-			 });	
+			 });	*/
 			 //alert("bbb");
 			 }catch(err){
 				//alert(err.message);
@@ -44,12 +55,18 @@ function clickcolor() {
 	   for(var d in divs2) { 
 			try{
 			//divs2[d].addEventListener('mouseup',highlight('yellow'));	
-			divs2[d].addEventListner('mouseup',function(){
-				highlight('yellow');
-			});
+			if (divs2[d].addEventListener) {
+				 divs2[d].addEventListener('mouseup',function(){
+					highlight('yellow');
+				});
+			} else {
+				divs2[d].attachEvent('mouseup', function(){
+					highlight('yellow');
+				});
+			}  
 			//alert("ccc");
 			}catch(err){
-				//alert(err.message);
+				 alert(err.message);
 			}
 			 
 	   }
