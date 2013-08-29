@@ -65,7 +65,23 @@ function makeEditableAndHighlight(colour) {
     }
     document.designMode = "off";
 }
-
+function highlight(colour) {
+    var range, sel;
+    if (window.getSelection) {
+        // IE9 and non-IE
+        try {
+            if (!document.execCommand("BackColor", false, colour)) {
+                makeEditableAndHighlight(colour);
+            }
+        } catch (ex) {
+            makeEditableAndHighlight(colour)
+        }
+    } else if (document.selection && document.selection.createRange) {
+        // IE <= 8 case
+        range = document.selection.createRange();
+        range.execCommand("BackColor", false, colour);
+    }
+}
 
 document.addEventListener('DOMContentLoaded', function () {
 	 clickcolor();
