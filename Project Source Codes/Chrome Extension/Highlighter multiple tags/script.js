@@ -27,17 +27,17 @@ function colorSelectedNodes(){
 }
 function clickcolor() {
     var divs = document.getElementsByTagName("p");
-	var divs2 = document.getElementsByTagName("h");
-	alert("wewewe");
+	var divs2 = document.getElementsByTagName("h2");
+	//alert("wewewe");
 	   for(var d in divs) { 
 			 try{
 			 //divs[d].addEventListener('mouseup',highlight('yellow'));	
 			 divs[d].addEventListener('mouseup',function(){
 				highlight('yellow');
 			 });	
-			 alert("bbb");
+			 //alert("bbb");
 			 }catch(err){
-				alert(err.message);
+				//alert(err.message);
 			 }
 			 
 	   }
@@ -47,10 +47,10 @@ function clickcolor() {
 			divs2[d].addEventListner('mouseup',function(){
 				highlight('yellow');
 			});
-			alert("ccc");
+			//alert("ccc");
 			}catch(err){
-			alert(err.message);
-			 }
+				//alert(err.message);
+			}
 			 
 	   }
 }
@@ -89,8 +89,12 @@ function highlight(colour) {
     } 
 }
 
+/*function test(){
+	var te = document.getElementByID();
+}*/
+
 document.addEventListener('DOMContentLoaded', function () {
 	 clickcolor();
-		alert("aaaa");
+		//alert("aaaa");
 });
 
