@@ -25,4 +25,27 @@ function colorSelectedNodes(){
     console.log("anchorNode", anchorNode);
     console.log("focusNode", focusNode);
 }
+function clickcolor(e) {
+    var divs = document.getElementsByTagName("p");
+	var divs2 = document.getElementsByTagName("h");
+	   for(var d in divs) { 
+			 try{
+			divs[d].addEventListener('mouseup',function(){var str= document.getSelection() ;
+			//alert(divs[d].nodeName);
+			this.innerHTML =this.innerHTML.replace(str,'<span style="background-color: '+'yellow'+' ">'+str+'</span>');
+			});	
+			 }catch(err){}
+			 
+	   }
+	   for(var d in divs2) { 
+			try{
+			divs2[d].addEventListener('mouseup',function(){var str= document.getSelection() ;
+			//alert(divs[d].nodeName);
+			this.innerHTML =this.innerHTML.replace(str,'<span style="background-color: '+'yellow'+' ">'+str+'</span>');
+			});	
+			}catch(err){
+			 }
+			 
+	   }
+}
 
