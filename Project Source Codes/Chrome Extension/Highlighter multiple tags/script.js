@@ -26,10 +26,10 @@
     console.log("focusNode", focusNode);
 }*/
 function clickcolor() {
-    var divs = document.getElementsByTagName("p");
-	var divs2 = document.getElementsByTagName("a");
+    var divs = document.getElementsByTagName('*');
+	/*var divs2 = document.getElementsByTagName("a");
 	var divs2 = document.getElementsByTagName("h2");
-	//alert("wewewe");
+	//alert("wewewe");*/
 	   for(var d in divs) { 
 			 try{
 			 
@@ -52,7 +52,7 @@ function clickcolor() {
 			 }
 			 
 	   }
-	   for(var d in divs2) { 
+	   /*for(var d in divs2) { 
 			try{
 			//divs2[d].addEventListener('mouseup',highlight('yellow'));	
 			if (divs2[d].addEventListener) {
@@ -69,7 +69,7 @@ function clickcolor() {
 				 alert(err.message);
 			}
 			 
-	   }
+	   }*/
 }
 // this will 'on' the document.designmode and edit it and 'off' the design mode
 function makeEditableAndHighlight(colour) {
