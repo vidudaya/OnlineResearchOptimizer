@@ -49,3 +49,8 @@ function clickcolor(e) {
 	   }
 }
 
+document.addEventListener('DOMContentLoaded', function () {
+	 clickcolor();
+ 
+});
+
