@@ -25,25 +25,31 @@ function colorSelectedNodes(){
     console.log("anchorNode", anchorNode);
     console.log("focusNode", focusNode);
 }
-function clickcolor(e) {
+function clickcolor() {
     var divs = document.getElementsByTagName("p");
 	var divs2 = document.getElementsByTagName("h");
+	alert("wewewe");
 	   for(var d in divs) { 
 			 try{
-			divs[d].addEventListener('mouseup',function(){var str= document.getSelection() ;
-			//alert(divs[d].nodeName);
-			this.innerHTML =this.innerHTML.replace(str,'<span style="background-color: '+'yellow'+' ">'+str+'</span>');
-			});	
-			 }catch(err){}
+			 //divs[d].addEventListener('mouseup',highlight('yellow'));	
+			 divs[d].addEventListener('mouseup',function(){
+				highlight('yellow');
+			 });	
+			 alert("bbb");
+			 }catch(err){
+				alert(err.message);
+			 }
 			 
 	   }
 	   for(var d in divs2) { 
 			try{
-			divs2[d].addEventListener('mouseup',function(){var str= document.getSelection() ;
-			//alert(divs[d].nodeName);
-			this.innerHTML =this.innerHTML.replace(str,'<span style="background-color: '+'yellow'+' ">'+str+'</span>');
-			});	
+			//divs2[d].addEventListener('mouseup',highlight('yellow'));	
+			divs2[d].addEventListner('mouseup',function(){
+				highlight('yellow');
+			});
+			alert("ccc");
 			}catch(err){
+			alert(err.message);
 			 }
 			 
 	   }
@@ -66,7 +72,7 @@ function makeEditableAndHighlight(colour) {
     document.designMode = "off";
 }
 function highlight(colour) {
-    var range, sel;
+     var range, sel;
     if (window.getSelection) {
         // IE9 and non-IE
         try {
@@ -76,15 +82,15 @@ function highlight(colour) {
         } catch (ex) {
             makeEditableAndHighlight(colour)
         }
-    } else if (document.selection && document.selection.createRange) {
+    }  else if (document.selection && document.selection.createRange) {
         // IE <= 8 case
         range = document.selection.createRange();
         range.execCommand("BackColor", false, colour);
-    }
+    } 
 }
 
 document.addEventListener('DOMContentLoaded', function () {
 	 clickcolor();
- 
+		alert("aaaa");
 });
 
