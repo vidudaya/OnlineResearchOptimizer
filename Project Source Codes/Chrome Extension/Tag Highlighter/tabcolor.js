@@ -1,3 +1,5 @@
+activateHighlighter();
+
 function activateHighlighter(){
 	var divs = document.getElementsByTagName('*');
 	
@@ -35,7 +37,7 @@ function makeEditableAndHighlight(colour) {
     document.designMode = "off";
 }
 function highlight(colour) {
-     var range, sel;
+    var range, sel;
     if (window.getSelection) {
         // IE9 and non-IE
         try {

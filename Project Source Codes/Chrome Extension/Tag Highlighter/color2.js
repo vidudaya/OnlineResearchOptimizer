@@ -10,7 +10,7 @@ function clickss(e) {
  function clickcolor() {
    chrome.tabs.executeScript(null,
                            {file : "tabcolor.js"});
-  window.close();
+   window.close();
 }
 
  
