@@ -1,8 +1,8 @@
 activateHighlighter();
 
 function activateHighlighter(){
-	var divs = document.getElementsByTagName('*');
-	
+	//var divs = document.getElementsByTagName('*');
+	var divs = document.getElementsByTagName('body');// to enhance the preformance
 	for(var d in divs) { 
 			try{
 			 
