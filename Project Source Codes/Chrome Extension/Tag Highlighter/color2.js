@@ -16,8 +16,17 @@ function clickss(e) {
  
 
 
-document.addEventListener('DOMContentLoaded', function () {      
+/*document.addEventListener('DOMContentLoaded', function () {      
 	 //clickss();	 
 	 clickcolor();
 	 //activateHighlighter();
+});*/
+
+document.addEventListener("DOMContentLoaded", function () {
+	//alert(document.name);	
+	document.getElementById('b1').addEventListener('click', function(){
+		//alert("vidda");
+		clickcolor();
+	});
+	//alert("vidda2");
 });

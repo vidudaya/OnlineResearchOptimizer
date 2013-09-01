@@ -1,11 +1,11 @@
 {
-  "name": " page color 2.",
+  "name": "Online Research Optimizer",
   "version": "1.0",
   "permissions": [
     "tabs", "http://*/*", "https://*/*"
   ],
   "browser_action": {
-      "default_title": "Tag Highlight",
+      "default_title": "Online Research Optimizer",
       "default_icon": "icon.png",
       "default_popup": "popup.html"
   },
