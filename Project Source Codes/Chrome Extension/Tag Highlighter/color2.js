@@ -13,7 +13,16 @@ function clickss(e) {
    //window.close();
 }
 
+ function annotator() {
+	chrome.tabs.executeScript(null,
+                           {file : "jquery-1.8.0.min.js"});
+    chrome.tabs.executeScript(null,
+                           {file : "annotator-full.min.js"});						   
+    chrome.tabs.executeScript(null,
+                           {file : "annotator.js"}); 
  
+
+}
 
 
 /*document.addEventListener('DOMContentLoaded', function () {      
@@ -27,6 +36,12 @@ document.addEventListener("DOMContentLoaded", function () {
 	document.getElementById('b1').addEventListener('click', function(){
 		//alert("vidda");
 		clickcolor();
+	});
+	
+	
+	document.getElementById('b2').addEventListener('click', function(){
+		//alert("vidda");		 
+		annotator();
 	});
 	//alert("vidda2");
 });
