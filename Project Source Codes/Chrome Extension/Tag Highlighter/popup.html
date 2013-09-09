@@ -2,24 +2,29 @@
 <html>
   <head>
     <title>Set Page Color Popup</title>
-    <script src="color2.js"></script>
+    
+	
 	<style>
 		body{
 		background-color:orange;
-		width : 200px;
+		width : 300px;
 		}
 	</style>
 	
   </head>  
    <body>
-	  <form>
+		<div id="topic" style="display: none;">Welcome to Online Research Optimizer</div>
+	    <form>
 		  <p id="highlight">Click to activate Quick Highlighter</p>
 		  <button id="quickhighlight" >Highlights</button>  
 		  <p id="Annotator">Click  to activate Tempary Annotator</p>
 		  <button id="temparyAnnotate" >Tempary Annotator</button>  
 		  <p id="Annotator2">Click to activate Advanced Annotator</p>
 		  <button id="advancedAnnotate" >Advanced Annotator</button> 
-	  </form>
+	    </form>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="color2.js"></script>
+	    <script type="text/javascript" src="js/init.js"></script>
   </body>
  
 </html>
