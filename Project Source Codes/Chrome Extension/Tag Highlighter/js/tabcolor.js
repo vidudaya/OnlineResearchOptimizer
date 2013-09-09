@@ -10,7 +10,7 @@ function activateHighlighter(){
 						highlight('yellow');
 					});
 				} else {
-					divs[d].attachEvent('mouseup', function(){
+					divs[d].attachEvent('mouseup', function(){ 
 						highlight('yellow');
 					});
 				} 

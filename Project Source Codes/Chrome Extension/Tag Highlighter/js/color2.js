@@ -14,17 +14,17 @@ function clickss(e) {
 // highlighter
  function clickcolor() {
    chrome.tabs.executeScript(null,
-                           {file : "tabcolor.js"});
+                           {file : "js/tabcolor.js"});
    //window.close();
 }
 
  function annotator() {
 	chrome.tabs.executeScript(null,
-                           {file : "jquery-1.8.0.min.js"});
+                           {file : "js/jquery.js"});
     chrome.tabs.executeScript(null,
-                           {file : "annotator-full.min.js"});						   
+                           {file : "js/annotator-full.min.js"});						   
     chrome.tabs.executeScript(null,
-                           {file : "annotator.js"}); 
+                           {file : "js/annotator.js"}); 
 }
 
 // use the annotation facility of the " http://a.nnotate.com "
