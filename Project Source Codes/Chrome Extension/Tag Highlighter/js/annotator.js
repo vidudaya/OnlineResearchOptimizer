@@ -8,6 +8,18 @@ link.rel = "stylesheet";
 document.getElementsByTagName("head")[0].appendChild(link);
 
 
+var divs = document.getElementsByTagName('body');
+	for(var d in divs) { 
+			try{			 
+				if (divs[d].removeEventListener) {
+					 divs[d].removeEventListener('mouseup', col);
+				} 
+			}catch(err){
+				alert(err.message);
+			}
+	}
+
+
 var $jq = jQuery.noConflict();
 $jq(document.body).annotator();
 

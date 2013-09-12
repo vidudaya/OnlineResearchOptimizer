@@ -1,18 +1,19 @@
 activateHighlighter();
 
+function col(){
+ 	highlight('yellow');
+}
+
+
 function activateHighlighter(){
 	//var divs = document.getElementsByTagName('*');
 	var divs = document.getElementsByTagName('body');// to enhance the preformance
 	for(var d in divs) { 
 			try{			 
 				if (divs[d].addEventListener) {
-					 divs[d].addEventListener('mouseup',function(){
-						highlight('yellow');
-					});
+					 divs[d].addEventListener('mouseup',col);
 				} else {
-					divs[d].attachEvent('mouseup', function(){ 
-						highlight('yellow');
-					});
+					divs[d].attachEvent('mouseup', col);
 				} 
 			}catch(err){
 				//alert(err.message);
