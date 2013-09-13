@@ -1,19 +1,20 @@
 activateHighlighter();
 
-function col(){
+// call the highlight method 
+function callHighlight(){
  	highlight('yellow');
 }
 
-
+// this will add eventListners to HTML body elements
 function activateHighlighter(){
 	//var divs = document.getElementsByTagName('*');
 	var divs = document.getElementsByTagName('body');// to enhance the preformance
 	for(var d in divs) { 
 			try{			 
 				if (divs[d].addEventListener) {
-					 divs[d].addEventListener('mouseup',col);
+					 divs[d].addEventListener('mouseup',callHighlight);
 				} else {
-					divs[d].attachEvent('mouseup', col);
+					divs[d].attachEvent('mouseup', callHighlight);
 				} 
 			}catch(err){
 				//alert(err.message);
@@ -25,7 +26,8 @@ function makeEditableAndHighlight(colour) {
     if (sel.rangeCount && sel.getRangeAt) {
         range = sel.getRangeAt(0);
     }
-    document.designMode = "on";
+	// design mode must be 'on' before doing midifications
+    document.designMode = "on"; 
     if (range) {
         sel.removeAllRanges();
         sel.addRange(range);

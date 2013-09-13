@@ -36,8 +36,8 @@ function annotator2() {
  
 
 document.addEventListener("DOMContentLoaded", function () {
-	//alert(document.name);	
-	document.getElementById('quickhighlight').addEventListener('click', function(){
+	 //alert(document.name);	
+	document.getElementById('quickHighlight').addEventListener('click', function(){
 		clickcolor();
 	}); 
 	

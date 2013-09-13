@@ -6,16 +6,16 @@
   ],
   "browser_action": {
       "default_title": "Online Research Optimizer",
-      "default_icon": "icon.png",
+      "default_icon": "images/icon.png",
       "default_popup": "popup.html"
   },
   "background": {
     "scripts": ["contextMenu.js"]
   },
   "icons": {
-      "128": "icon.png",
-      "16": "icon.png",
-      "48": "icon.png"
+      "128": "images/icon.png",
+      "16": "images/icon.png",
+      "48": "images/icon.png"
    },
   
   "manifest_version": 2

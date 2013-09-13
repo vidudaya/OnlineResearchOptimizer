@@ -1,6 +1,4 @@
-// Copyright (c) 2010 The Chromium Authors. All rights reserved.
-// Use of this source code is governed by a BSD-style license that can be
-// found in the LICENSE file.
+ 
 
 // A generic onclick callback function.
 function genericOnClick(info, tab) {
@@ -13,7 +11,13 @@ function speak_selected(info, tab){
     
 	var str= info.selectionText; 
 	var speak_url = 'http://translate.google.com/translate_tts?tl=en&q='+str+'&#8221';
-	chrome.tabs.create({ url: speak_url });
+	//chrome.tabs.create({ url: speak_url });
+	try{
+		chrome.windows.create({ url: speak_url,width:150, height: 200  });
+	}catch(ex){
+		alert("erorr");
+	}
+	//alert(ssss);
 }
 
 function color(info, tab){
@@ -78,6 +82,8 @@ for (var i = 0; i < contexts.length; i++) {
 }*/
 // Create a parent item and two children.
 
+
+// creates the context menu item to highlight
 var child1 = chrome.contextMenus.create(
   {"title": "Pronounce it" ,"contexts":["selection"],"onclick": speak_selected});
 
