@@ -1,3 +1,9 @@
+/*
+* Online Research Optimizer
+* Version 1.0.0
+* Author : Vidudaya Neranjan Bandara
+*/
+
 // set the initial css and JQuery styles
 $(document).ready(function(){
 	$('#topic').fadeIn(3000);

@@ -1,4 +1,8 @@
- 
+/*
+* Online Research Optimizer
+* Version 1.0.0
+* Author : Vidudaya Neranjan Bandara
+*/ 
 
 // A generic onclick callback function.
 function genericOnClick(info, tab) {

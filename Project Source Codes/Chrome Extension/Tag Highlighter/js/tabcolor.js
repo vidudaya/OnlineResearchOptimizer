@@ -1,3 +1,10 @@
+/*
+* Online Research Optimizer
+* Version 1.0.0
+* Author : Vidudaya Neranjan Bandara
+*/
+
+
 activateHighlighter();
 
 // call the highlight method 

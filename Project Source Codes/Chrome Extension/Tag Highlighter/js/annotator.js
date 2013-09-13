@@ -1,4 +1,8 @@
-
+/*
+* Online Research Optimizer
+* Version 1.0.0
+* Author : Vidudaya Neranjan Bandara
+*/
 //alert("start annotating");
 
 //This will inject a HTML link element to the currently focused web page. This action will be used to 
