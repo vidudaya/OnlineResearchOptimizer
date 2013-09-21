@@ -5,3 +5,5 @@
 week 1 reports submitted
 
 have to implement the annotation part, and web page download parts.
+
+added a word pronounceiation part
