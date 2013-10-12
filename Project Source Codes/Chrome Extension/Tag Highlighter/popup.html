@@ -12,6 +12,7 @@
 	<style type="text/css">
 		.buttonStyle1 {width : 200px ; height : 30px ; background-color : #F5F5DC;}
 		.buttonStyle2 {width : 200px ; height : 30px ; background-color : #FFE4C4;}
+		.buttonStyle3 {width : 75px ; height : 20px;}
 	</style>
 	
   </head>  
@@ -20,11 +21,22 @@
 	    <form>
 		  <button id="quickHighlight" class = "buttonStyle1" >Highlights</button>  
 		  <button id="temparyAnnotate" class = "buttonStyle1" >Tempary Annotator</button>  
-		  <button id="advancedAnnotate"  class = "buttonStyle1">Annotate a SnapShot</button> 
-		  <p id="highlight">Click to activate Quick Highlighter. Using this you can highlight any text in the web page</p>
+		  <button id="advancedAnnotate"  class = "buttonStyle1" >Annotate a SnapShot</button> 
+		  <div id="quickHighlightDiv">
+			  <p id="highlight">Click to activate Quick Highlighter. Using this you can highlight any text in the web page</p>
+			  <button id="color_yellow" class="buttonStyle3" style="background-color : #FFFF00"></button>
+			  <button id="color_red" class="buttonStyle3" style="background-color : #FF9999"></button>
+			  <button id="color_green" class="buttonStyle3" style="background-color : #99FF66"></button>
+			  <button id="color_blue" class="buttonStyle3" style="background-color : #66CCFF"></button>
+			  <button id="color_white" class="buttonStyle3" style="background-color : #FFFFFF"></button>
+			  <input id="textBOx" type="text"></input>
+		  </div>	
+		  <div id="AnnotatorDiv">
 		  <p id="Annotator">Click  to activate Tempary Annotator. Using this you can add annotations and you can also highlight a text area</p>
+		  </div>
+		  <div id="Annotator2Div">
 		  <p id="Annotator2">Click to activate SnapShot Annotator. This will use an external service provided by  "http://a.nnotate.com" </p>
-		  
+		  </div>
 	    </form>
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/event-handler.js"></script>

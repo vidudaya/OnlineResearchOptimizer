@@ -9,7 +9,7 @@ activateHighlighter();
 
 // call the highlight method 
 function callHighlight(){
- 	highlight('#FFFF00');
+ 	highlight('#FFFFFF');
 }
 function removeListnersFromBodyElements(){
 	var divs = document.getElementsByTagName('body');

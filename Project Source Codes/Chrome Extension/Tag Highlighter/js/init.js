@@ -6,36 +6,36 @@
 // set the initial css and JQuery styles
 $(document).ready(function(){
 	$('#topic').fadeIn(3000);
-	$("#highlight,#Annotator,#Annotator2").hide();
+	$("#quickHighlightDiv,#AnnotatorDiv,#Annotator2Div").hide();
 	 
 	$('#quickHighlight').mouseenter(function(){
-		$("#highlight,#Annotator,#Annotator2").delay(500).hide();
+		$("#quickHighlightDiv,#AnnotatorDiv,#Annotator2Div").delay(500).hide();
 		$(this).addClass("buttonStyle2");
-		$("#highlight").delay(1000).show(1000);
+		$("#quickHighlightDiv").delay(1000).show(1000);
 		
 	});
 	$('#temparyAnnotate').mouseenter(function(){
-		$("#highlight,#Annotator,#Annotator2").delay(500).hide();
+		$("#quickHighlightDiv,#AnnotatorDiv,#Annotator2Div").delay(500).hide();
 		$(this).addClass("buttonStyle2");
-		$("#Annotator").delay(1000).show(1000);
+		$("#AnnotatorDiv").delay(1000).show(1000);
 		
 	});
 	$('#advancedAnnotate').mouseenter(function(){
-		$("#highlight,#Annotator,#Annotator2").delay(500).hide();
+		$("#quickHighlightDiv,#AnnotatorDiv,#Annotator2Div").delay(500).hide();
 		$(this).addClass("buttonStyle2");
-		$("#Annotator2").delay(1000).show(1000);
+		$("#Annotator2Div").delay(1000).show(1000);
 		
 	});
 	$('#quickHighlight').mouseleave(function(){
 		$(this).removeClass("buttonStyle2");
-		$("#Annotator,#Annotator2").hide();
+		$("#AnnotatorDiv,#Annotator2Div").hide();
 	});
 	$('#temparyAnnotate').mouseleave(function(){
 		$(this).removeClass("buttonStyle2");
-		$("#highlight,#Annotator2").hide(); 
+		$("#quickHighlightDiv,#Annotator2Div").hide(); 
 	});
 	$('#advancedAnnotate').mouseleave(function(){
 		$(this).removeClass("buttonStyle2");
-		$("#highlight,#Annotator").hide(); 
+		$("#quickHighlightDiv,#AnnotatorDiv").hide(); 
 	});
 });
