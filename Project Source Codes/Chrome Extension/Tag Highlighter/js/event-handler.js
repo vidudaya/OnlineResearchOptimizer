@@ -32,6 +32,26 @@ function clickss(e) {
                            {file : "js/tabcolorBlue.js"});
    //window.close();
 }
+ function clickcolorLBlue() {
+    chrome.tabs.executeScript(null,
+                           {file : "js/tabcolorLBlue.js"});
+   //window.close();
+}
+ function clickcolorWhite() {
+    chrome.tabs.executeScript(null,
+                           {file : "js/tabcolorWhite.js"});
+   //window.close();
+}
+ function clickcolorDGreen() {
+    chrome.tabs.executeScript(null,
+                           {file : "js/tabcolorDGreen.js"});
+   //window.close();
+}
+ function clickcolorPink() {
+    chrome.tabs.executeScript(null,
+                           {file : "js/tabcolorPink.js"});
+   //window.close();
+}
 
 
  function annotator() {
@@ -70,6 +90,15 @@ document.addEventListener("DOMContentLoaded", function () {
 	}); 
 	document.getElementById('color_white').addEventListener('click', function(){
 		clickcolorWhite();
+	}); 
+	document.getElementById('color_lblue').addEventListener('click', function(){
+		clickcolorLBlue();
+	}); 
+	document.getElementById('color_dgreen').addEventListener('click', function(){
+		clickcolorDGreen();
+	}); 
+	document.getElementById('color_pink').addEventListener('click', function(){
+		clickcolorPink();
 	}); 
 	
 	document.getElementById('temparyAnnotate').addEventListener('click', function(){
