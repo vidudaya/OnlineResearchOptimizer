@@ -6,7 +6,7 @@
 // set the initial css and JQuery styles
 $(document).ready(function(){
 	$('#topic').fadeIn(3000);
-	$("#quickHighlightDiv,#AnnotatorDiv,#Annotator2Div,#dictionary").hide();
+	$("#quickHighlightDiv,#AnnotatorDiv,#Annotator2Div,#dictionaryDiv").hide();
 	 
 	$('#quickHighlight').mouseenter(function(){
 		$("#quickHighlightDiv,#AnnotatorDiv,#Annotator2Div,#dictionaryDiv").hide();

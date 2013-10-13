@@ -33,6 +33,7 @@ function activateHighlighter(){
 			try{			 
 				if (divs[d].addEventListener) {
 					 divs[d].addEventListener('mouseup',callHighlight);
+					// alert("viddaaaaa"+divs[d]);
 				} else {
 					divs[d].attachEvent('mouseup', callHighlight);
 				} 

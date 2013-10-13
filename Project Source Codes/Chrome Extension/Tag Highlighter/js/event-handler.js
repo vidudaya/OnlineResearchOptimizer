@@ -76,6 +76,11 @@ function activateDictionary() {
                            {file : "js/dblclick.js"});
 }
 
+function pickImages() {
+	chrome.tabs.executeScript(null,
+                           {file : "js/imageView.js"});
+}
+
  
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -117,5 +122,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }); 
 	document.getElementById('dictionaryButton').addEventListener('click', function () {
 		activateDictionary();   		 
+    });
+	document.getElementById('img_picker').addEventListener('click', function () {
+		pickImages();   		 
     }); 
 });
