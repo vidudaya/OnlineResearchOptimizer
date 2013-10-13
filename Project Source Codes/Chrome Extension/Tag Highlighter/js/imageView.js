@@ -14,11 +14,16 @@ function bindImg(){
 	newDiv.id="cvNew";
 	document.getElementsByTagName("body")[0].appendChild(newDiv);
 	
-	var element = document.createElement('h1');
+	var element1 = document.createElement('h1');
 	var topic = document.createTextNode('The Images of the page');
-	element.appendChild(topic);
-	document.getElementById("cvNew").appendChild(element);
+	element1.appendChild(topic);
+	document.getElementById("cvNew").appendChild(element1);
 	  
+	var element = document.createElement('h2');
+	var description = document.createTextNode('Online Research Optimizer - by Vidudaya Neranjan Bandara');
+	element.appendChild(description);
+	document.getElementById("cvNew").appendChild(element);	
+	
 	while(0<imgz.length){
 		var img = document.createElement("img");
 		img.src=imgz.pop();
