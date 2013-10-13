@@ -14,12 +14,15 @@ function callHighlight(){
 function removeListnersFromBodyElements(){
 	var divs = document.getElementsByTagName('body');
 		for(var d in divs) { 
-				try{			 
-					if (divs[d].removeEventListener) {
+				try{
+					var old_element = divs[d];
+					var new_element = old_element.cloneNode(true);
+					old_element.parentNode.replaceChild(new_element, old_element);
+					/*if (divs[d].removeEventListener) {
 						 divs[d].removeEventListener('mouseup', callHighlight);
-					} 
+					} */
 				}catch(err){
-					alert(err.message);
+					//alert(err.message);
 				}
 		}
 	return true;// code executed successfully	
