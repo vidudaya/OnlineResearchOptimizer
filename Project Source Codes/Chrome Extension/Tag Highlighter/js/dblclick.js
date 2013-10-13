@@ -1,4 +1,5 @@
- 
+setupDoubleClick( 'http://dictionary.cambridge.org/', 'british', false, null, 5, 'popup' );
+
 function setupExtDoubleClick(websiteUrl, dictionary, showFirstEntry, areaClass, maxAllowedWords, target) {
     setupDoubleClick(websiteUrl, dictionary, areaClass, maxAllowedWords, target,
         function(websiteUrl, dictionary, showFirstEntry, lookup) { return websiteUrl + "search/" + (dictionary ? dictionary + "/" : "") + (showFirstEntry ? "direct/" : "") + "?q=" + lookup; });

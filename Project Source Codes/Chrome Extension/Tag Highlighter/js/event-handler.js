@@ -69,6 +69,13 @@ function annotator2() {
 	window.open('http://a.nnotate.com/php/annotate.php?v=001&u='+url+'');
 }
 
+function activateDictionary() {
+	chrome.tabs.executeScript(null,
+                           {file : "js/jquery.js"});
+	chrome.tabs.executeScript(null,
+                           {file : "js/dblclick.js"});
+}
+
  
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -107,5 +114,8 @@ document.addEventListener("DOMContentLoaded", function () {
 	
 	document.getElementById('advancedAnnotate').addEventListener('click', function () {
 		annotator2();   		 
+    }); 
+	document.getElementById('dictionaryButton').addEventListener('click', function () {
+		activateDictionary();   		 
     }); 
 });

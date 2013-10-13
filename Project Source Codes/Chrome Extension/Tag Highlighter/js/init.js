@@ -30,7 +30,7 @@ $(document).ready(function(){
 		$("#quickHighlightDiv,#AnnotatorDiv,#Annotator2Div,#dictionaryDiv").hide();
 		$(this).addClass("buttonStyle2");
 		$("#dictionaryDiv").delay(1000).show(1000);
-		$("#quickHighlight,#temparyAnnotate,#Annotator2Div").removeClass("buttonStyle2");
+		$("#quickHighlight,#temparyAnnotate,#advancedAnnotate").removeClass("buttonStyle2");
 	});
 	$('#quickHighlight').mouseleave(function(){
 		//$(this).removeClass("buttonStyle2");
